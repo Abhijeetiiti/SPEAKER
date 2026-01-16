@@ -72,7 +72,7 @@ function Speaker2024() {
         animationSpeed={3}
         showBorder={false}
       >
-        <h1 id="our-speaker">2026</h1>
+        <h1 id="our-speaker">2024</h1>
       </GradientText>
 
      <div style={{ height: '500px', position: 'relative', paddingLeft: '50px', paddingTop: '50px', paddingRight: '50px' }}>

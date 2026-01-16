@@ -6,14 +6,53 @@ import Hyperspeed from './components/Hyperspeed.jsx'
 import TedxFooter from './components/TedxFooter.jsx'
 import GradientText from './components/GradientText.jsx'
 import TextType from './components/TextType.jsx'
+import CardNav from './components/CardNav.jsx';
+
+const items = [
+    {
+      label: "About Us",
+      bgColor: "#0D0716",
+      textColor: "#fff",
+      links: [
+        { label: "Company", ariaLabel: "About Company" },
+        { label: "Careers", ariaLabel: "About Careers" }
+      ]
+    },
+    {
+      label: "Projects", 
+      bgColor: "#170D27",
+      textColor: "#fff",
+      links: [
+        { label: "Featured", ariaLabel: "Featured Projects" },
+        { label: "Case Studies", ariaLabel: "Project Case Studies" }
+      ]
+    },
+    {
+      label: "Contact",
+      bgColor: "#271E37", 
+      textColor: "#fff",
+      links: [
+        { label: "Email", ariaLabel: "Email us" },
+        { label: "Twitter", ariaLabel: "Twitter" },
+        { label: "LinkedIn", ariaLabel: "LinkedIn" }
+      ]
+    }
+  ];
 
 function Home() {
   return (
     <>
-    
-          
-
-    <div className="">
+ <div><CardNav
+        logoSrc="./public/logo.png"
+      logoAlt="Tedx IITI "
+      items={items}
+      baseColor="#fff"
+      menuColor="#000"
+      buttonBgColor="#111"
+      buttonTextColor="#fff"
+      ease="power3.out"
+    /></div>
+    <div className=" mt-100 relative min-h-screen overflow-hidden py-20 flex flex-col items-center justify-center gap-20 bg-black">
     <div className="absolute inset-0 z-0">
   <Hyperspeed className="ml-100"
         effectOptions={{
@@ -52,7 +91,7 @@ function Home() {
           }
         }}
       />
-           <GradientText
+           <GradientText 
         colors={["#FDDCA9", "#FEA712", "#E76219", "#C21717", "#562717"]}
         animationSpeed={2}
         showBorder={false}
