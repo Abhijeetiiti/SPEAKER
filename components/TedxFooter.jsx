@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { Instagram, Linkedin, Twitter, Youtube, Mail } from "lucide-react";
 import "./TedxFooter.css";
 
