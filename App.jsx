@@ -1,9 +1,9 @@
 import { Routes, Route } from "react-router-dom";
 
 import Home from "./Home";
-import Speaker2025 from "./components/speaker2025";
-import Speaker2024 from "./components/speaker2024";
-import Speaker2023 from "./components/speaker2023";
+import Speaker2025 from "./speaker2025";
+import Speaker2024 from "./speaker2024";
+import Speaker2023 from "./speaker2023";
 import Gallery from "./components/Gallery";
 
 function App() {

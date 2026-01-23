@@ -196,3 +196,21 @@ main.sphere-main {
 .edge-fade--bottom {
   bottom: 0;
 }
+
+.sphere {
+  animation: dome-auto-rotate 40s linear infinite;
+  will-change: transform;
+}
+
+@keyframes dome-auto-rotate {
+  from {
+    transform: translateZ(calc(var(--radius) * -1))
+               rotateX(0deg)
+               rotateY(0deg);
+  }
+  to {
+    transform: translateZ(calc(var(--radius) * -1))
+               rotateX(0deg)
+               rotateY(360deg);
+  }
+}

@@ -20,3 +20,16 @@
 
 
 
+@keyframes spin-x {
+  from {
+    transform: rotateX(0deg);
+  }
+  to {
+    transform: rotateX(360deg);
+  }
+}
+
+.animate-spin-x {
+  animation: spin-x 0.25s linear infinite; /* hyper speed */
+  transform-style: preserve-3d;
+}

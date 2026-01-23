@@ -1,10 +1,10 @@
 import { NavLink, Outlet } from "react-router-dom";
-import TedxFooter from "./TedxFooter"; // adjust path
+import TedxFooter from "./TedxFooter";y
 
 function Layout() {
   return (
     <div className="relative min-h-screen flex flex-col">
-      {/* Right navbar */}
+   
       <nav className="right-navbar">
         <NavLink to="/">2026</NavLink>
         <NavLink to="/speaker2025">2025</NavLink>
@@ -13,12 +13,11 @@ function Layout() {
         <NavLink to="/gallery">Gallery</NavLink>
       </nav>
 
-      {/* Page content */}
+   
       <main className="flex-1">
-        <Outlet /> {/* This renders the child routes */}
+        <Outlet /> 
       </main>
 
-      {/* Footer */}
       <TedxFooter className="relative z-10 bg-black text-white" />
     </div>
   );

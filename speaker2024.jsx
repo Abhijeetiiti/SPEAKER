@@ -1,12 +1,14 @@
 import Navbar from "./components/Navbar";
 import './App.css'
+
 import TeamCards from './components/TeamCard.jsx' ;
 
-function Home() {
+
+function Speaker2024() {
   return (
     <>
   
-     <div style={{ height: '1050px', position: 'relative', paddingLeft: '50px', paddingTop: '50px', paddingRight: '50px' }}>
+      <div style={{ height: '1050px', position: 'relative', paddingLeft: '50px', paddingTop: '50px', paddingRight: '50px' }}>
 
          
     <div className="team-section">
@@ -20,4 +22,5 @@ function Home() {
   );
 }
 
-export default Home;
+export default Speaker2024;
+
