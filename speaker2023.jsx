@@ -9,7 +9,6 @@ function Speaker2023() {
     <>
     <div style={{ height: '1050px', position: 'relative', paddingLeft: '50px', paddingTop: '50px', paddingRight: '50px' }}>
 
-         
     <div className="team-section">
     
       <TeamCards />
